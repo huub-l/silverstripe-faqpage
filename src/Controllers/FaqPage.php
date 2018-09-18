@@ -1,6 +1,6 @@
 <?php
 
-namespace Hestec\Faqpage;
+namespace Hestec\FaqPage;
 
 use Symbiote\GridFieldExtensions\GridFieldOrderableRows;
 use SilverStripe\Forms\GridField\GridField;
