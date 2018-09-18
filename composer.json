@@ -19,9 +19,6 @@
 		"silverstripe/cms": ">=4.0"
 	},
 	"extra": {
-		"expose": [
-			"client"
-		],
-		"installer-name": "faqpage"
+		"installer-name": "silverstripe-faqpage"
 	}
 }
