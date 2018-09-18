@@ -1,0 +1,27 @@
+{
+	"name": "hestec/silverstripe-faqpage",
+	"description": "Page type for an FAQ with categories",
+	"type": "silverstripe-vendormodule",
+	"license": "BSD-3-Clause",
+	"keywords": ["silverstripe","FAQ"],
+	"authors": [
+		{
+			"name": "Eric Hes",
+			"homepage": "http://www.hestec.nl",
+			"role": "Developer"
+		}
+	],
+  "support": {
+    "issues": "https://github.com/brasileric/silverstripe-faqpage/issues"
+  },
+	"require": {
+		"silverstripe/framework": ">=4.0",
+		"silverstripe/cms": ">=4.0"
+	},
+	"extra": {
+		"expose": [
+			"client"
+		],
+		"installer-name": "sisowmethod"
+	}
+}

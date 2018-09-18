@@ -1,0 +1,26 @@
+en:
+  Hestec\FaqPage\FaqPage:
+    PLURALNAME: 'FAQ pages'
+    PLURALS:
+      one: 'A FAQ page'
+      other: '{count} FAQ pages'
+    SINGULARNAME: 'FAQ page'
+    CATEGORIES: 'Categories'
+  Hestec\FaqPage\FaqCategorie:
+    PLURALNAME: 'Categories'
+    PLURALS:
+      one: 'A category'
+      other: '{count} categories'
+    SINGULARNAME: 'Category'
+    NUMBER_OF_QUESTIONS: 'Number of questions'
+    QUESTIONS: 'Questions'
+    db_Title: 'Title'
+
+  Hestec\FaqPage\FaqQuestion:
+    PLURALNAME: 'Questions'
+    PLURALS:
+      one: 'A question'
+      other: '{count} questions'
+    SINGULARNAME: 'Question'
+    db_Question: 'Question'
+    db_Answer: 'Answer'

@@ -1,0 +1,27 @@
+nl:
+  Hestec\FaqPage\FaqPage:
+    PLURALNAME: 'FAQ paginas'
+    PLURALS:
+      one: 'Een FAQ pagina'
+      other: '{count} FAQ paginas'
+    SINGULARNAME: 'FAQ pagina'
+    CATEGORIES: 'Categorieen'
+  Hestec\FaqPage\FaqCategorie:
+    PLURALNAME: 'Categorieen'
+    PLURALS:
+      one: 'Een categorie'
+      other: '{count} categorieen'
+    SINGULARNAME: 'Categorie'
+    NUMBER_OF_QUESTIONS: 'Aantal vragen'
+    QUESTIONS: 'Vragen'
+    db_Title: 'Titel'
+  Hestec\FaqPage\FaqQuestion:
+    PLURALNAME: 'Vragen'
+    PLURALS:
+      one: 'Een vraag'
+      other: '{count} vragen'
+    SINGULARNAME: 'Vragen'
+    db_Question: 'Vraag'
+    db_Answer: 'Antwoord'
+  FaqCategorie:
+    SAVE_FIRST_TIME: 'Vragen kunnen toegevoegd worden nadat de categorie voor de eerste keer is opgelagen.'
