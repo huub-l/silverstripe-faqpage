@@ -9,6 +9,7 @@ use Symbiote\GridFieldExtensions\GridFieldOrderableRows;
 use SilverStripe\CMS\Model\SiteTree;
 use SilverStripe\Forms\LiteralField;
 use SilverStripe\Forms\GridField\GridFieldDeleteAction;
+use SilverStripe\Security\Permission;
 
 class FaqCategorie extends DataObject {
 

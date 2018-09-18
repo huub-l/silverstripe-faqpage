@@ -4,6 +4,7 @@ namespace Hestec\FaqPage;
 
 use SilverStripe\ORM\DataObject;
 use SilverStripe\CMS\Model\SiteTree;
+use SilverStripe\Security\Permission;
 
 class FaqQuestion extends DataObject {
 
