@@ -3,6 +3,7 @@
 <main role="main">
 <div class="container">
     <h1>$Title</h1>
+    $Content
     <div class="faq-section accordion" id="accordion">
     <% loop $Categories %>
         <% if $Up.Categories.Count > 1 %>
