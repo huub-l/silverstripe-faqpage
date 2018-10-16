@@ -11,7 +11,7 @@ class FaqPage extends \Page {
     private static $table_name = 'HestecFaqPage';
 
     private static $has_many = [
-        'Categories' => FaqCategorie::class
+        'Categories' => FaqCategory::class
     ];
 
     public function getCMSFields() {

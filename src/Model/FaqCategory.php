@@ -11,11 +11,11 @@ use SilverStripe\Forms\LiteralField;
 use SilverStripe\Forms\GridField\GridFieldDeleteAction;
 use SilverStripe\Security\Permission;
 
-class FaqCategorie extends DataObject {
+class FaqCategory extends DataObject {
 
-    private static $table_name = 'HestecFaqCategorie';
+    private static $table_name = 'HestecFaqCategory';
 
-    private static $singular_name = 'Categorie';
+    private static $singular_name = 'Category';
     private static $plural_name = 'Categories';
 
     private static $db = [
@@ -64,7 +64,7 @@ class FaqCategorie extends DataObject {
 
         }else{
 
-            $InfoField = LiteralField::create('InfoField', _t("FaqCategorie.SAVE_FIRST_TIME", "You can add questions after you have saved the categorie for the first time."));
+            $InfoField = LiteralField::create('InfoField', _t("FaqCategory.SAVE_FIRST_TIME", "You can add questions after you have saved the categorie for the first time."));
             $fields->addFieldToTab('Root.Main', $InfoField);
 
         }

@@ -20,7 +20,7 @@ class FaqQuestion extends DataObject {
     ];
 
     private static $has_one = [
-        'Category' => FaqCategorie::class,
+        'Category' => FaqCategory::class,
         'Page' => SiteTree::class
     ];
 
