@@ -12,7 +12,7 @@ class FaqPageController extends \PageController {
         foreach (FaqQuestion::get()->filter('CategoryID:GreaterThan', 0) as $q){
 
             $a = Schema::answer();
-            $a->text($q->Answer);
+            $a->text(strip_tags($q->Answer));
 
             $qa = Schema::question();
             $qa->name($q->Question);
