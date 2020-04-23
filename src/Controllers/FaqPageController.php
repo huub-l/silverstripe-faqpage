@@ -1,7 +1,40 @@
 <?php
 
 namespace Hestec\FaqPage;
+use Spatie\SchemaOrg\Schema;
 
 class FaqPageController extends \PageController {
+
+    public function SchemaFaqPage()
+    {
+
+        $questions = array();
+        foreach (FaqQuestion::get()->filter('CategoryID:GreaterThan', 0) as $q){
+
+            $a = Schema::answer();
+            $a->text($q->Answer);
+
+            $qa = Schema::question();
+            $qa->name($q->Question);
+            $qa->acceptedAnswer($a);
+
+            array_push($questions, $qa);
+
+        }
+
+        $faqpage = Schema::fAQPage();
+        $faqpage->identifier($this->AbsoluteLink().'#faq');
+        $faqpage->url($this->AbsoluteLink());
+        $faqpage->inLanguage($this->ContentLocale());
+        $faqpage->name($this->MetaTitle);
+        $faqpage->description($this->MetaDescription);
+        $faqpage->datePublished($this->Created);
+        $faqpage->dateModified($this->LastEdited);
+        $faqpage->isPartOf($this->SchemaWebsite());
+        $faqpage->mainEntity($questions);
+
+        return $faqpage;
+
+    }
 
 }
