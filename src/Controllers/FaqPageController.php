@@ -9,16 +9,21 @@ class FaqPageController extends \PageController {
     {
 
         $questions = array();
-        foreach (FaqQuestion::get()->filter('CategoryID:GreaterThan', 0) as $q){
 
-            $a = Schema::answer();
-            $a->text(strip_tags($q->Answer));
+        foreach ($this->Categories() as $cat){
 
-            $qa = Schema::question();
-            $qa->name($q->Question);
-            $qa->acceptedAnswer($a);
+            foreach (FaqQuestion::get()->filter('CategoryID', $cat->ID) as $q){
 
-            array_push($questions, $qa);
+                $a = Schema::answer();
+                $a->text(preg_replace('/\[(\w+)[^\]]*]([^\[]+\[\\?\/\1\])?/', '', strip_tags($q->Answer)));
+
+                $qa = Schema::question();
+                $qa->name($q->Question);
+                $qa->acceptedAnswer($a);
+
+                array_push($questions, $qa);
+
+            }
 
         }
 
