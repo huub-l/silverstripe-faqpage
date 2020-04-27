@@ -73,6 +73,12 @@ class FaqCategory extends DataObject {
         return $fields;
     }
 
+    public function AnchorLink(){
+
+        return SiteTree::create()->generateURLSegment($this->Title);
+
+    }
+
     public function canView($member = null)
     {
         return Permission::check('CMS_ACCESS_CMSMain', 'any', $member);
